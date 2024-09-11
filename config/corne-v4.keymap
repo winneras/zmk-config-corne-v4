@@ -129,10 +129,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N6       &kp N7        &kp N8           &kp N9         &kp N0   &none     &none   &trans  &trans    &trans        &trans     &trans  &trans
-&trans  &kp N1       &kp N2        &kp N3           &kp N4         &kp N5   &none     &none   &trans  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&none   &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp DOT  &trans    &trans  &trans  &trans    &kp DOWN      &trans     &trans  &trans
-                                                    &none          &none    &trans    &trans  &trans  &trans
+&trans  &kp N1       &kp N2        &kp N3           &kp NUMBER_4   &kp N5   &none     &none   &kp N6  &kp N7    &kp N8        &kp N9     &kp N0  &trans
+&trans  &kp N6       &kp N7        &kp N8           &kp N9         &kp N0   &none     &none   &trans  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp DOT  &trans    &trans  &trans  &trans    &kp DOWN      &trans     &trans  &trans
+                                                    &trans         &trans   &trans    &trans  &trans  &trans
             >;
 
             label = "number";
@@ -140,10 +140,10 @@
 
         func {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6   &none     &none   &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none     &none   &none           &kp LSHFT          &kp LCTRL        &kp LALT              &kp LGUI              &none
-&none   &none   &none   &none    &none    &none    &trans    &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &none                 &none                 &none
-                                 &none    &none    &none     &none   &trans          &none
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6   &none    &none  &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none    &none  &none           &kp LSHFT          &kp LCTRL        &kp LALT              &kp LGUI              &none
+&none   &none   &none   &none    &none    &none    &none    &none  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &none                 &none                 &none
+                                 &none    &none    &none    &none  &trans          &none
             >;
 
             label = "func";
@@ -151,10 +151,10 @@
 
         switch {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none             &none           &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &none             &none           &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &bootloader       &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans
-                                                      &trans        &trans        &trans            &trans          &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none          &none           &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &none          &none           &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &bootloader    &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans
+                                                      &trans        &trans        &trans         &trans          &trans  &trans
             >;
 
             label = "switch";
