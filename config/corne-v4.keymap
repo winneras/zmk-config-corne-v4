@@ -66,12 +66,12 @@
 
         left_enter {
             bindings = <&kp ENTER>;
-            key-positions = <34 44>;
+            key-positions = <44 19>;
         };
 
         right_enter {
             bindings = <&kp ENTER>;
-            key-positions = <35 45>;
+            key-positions = <45 22>;
         };
     };
 
