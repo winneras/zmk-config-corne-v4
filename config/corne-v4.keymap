@@ -124,10 +124,10 @@
 
         symbol {
             bindings = <
-&trans  &mt LEFT_ALT EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &none     &none   &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp MINUS      &kp PLUS          &trans
-&trans  &mt LEFT_CONTROL TAB      &kp LEFT     &kp UP    &kp RIGHT   &kp PAGE_UP    &none     &trans  &trans     &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT   &kp LEFT_CONTROL  &trans
-&trans  &mt LEFT_SHIFT ESCAPE     &kp END      &kp DOWN  &kp HOME    &kp PAGE_DOWN  &trans    &trans  &kp EQUAL  &kp UNDERSCORE  &kp GRAVE     &kp BACKSLASH  &kp SQT           &trans
-                                                         &trans      &trans         &trans    &trans  &trans     &trans
+&trans  &mt LEFT_ALT EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &none     &none   &kp CARET      &kp AMPERSAND   &kp ASTERISK    &kp MINUS          &kp PLUS          &trans
+&trans  &mt LEFT_CONTROL TAB      &kp LEFT     &kp UP    &kp RIGHT   &kp PAGE_UP    &none     &trans  &kp GRAVE      &kp LEFT_SHIFT  &kp LEFT_GUI    &kp LEFT_ALT       &kp LEFT_CONTROL  &trans
+&trans  &mt LEFT_SHIFT ESCAPE     &kp END      &kp DOWN  &kp HOME    &kp PAGE_DOWN  &trans    &trans  &kp BACKSLASH  &kp EQUAL       &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp SQT           &trans
+                                                         &trans      &trans         &trans    &trans  &trans         &trans
             >;
 
             label = "symbol";
