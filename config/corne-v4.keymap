@@ -39,14 +39,9 @@
             key-positions = <22 23>;
         };
 
-        del {
-            bindings = <&kp DELETE>;
-            key-positions = <12 13>;
-        };
-
         left_del {
             bindings = <&kp DELETE>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
         };
 
         to_game {
@@ -90,10 +85,10 @@
 
         qwerty-hrm-mac {
             bindings = <
-&kp ESC          &kp Q                &kp W            &kp E            &kp R              &kp T        &none          &none        &kp Y        &kp U               &kp I             &kp O             &kp P                         &kp BACKSPACE
-&kp TAB          &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G        &none          &none        &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMICOLON  &kp SQT
-&mt LSHFT GRAVE  &kp Z                &kp X            &kp C            &kp V              &kp B        &kp MINUS      &kp EQUAL    &kp N        &kp M               &kp COMMA         &kp DOT           &kp FSLH                      &mt RIGHT_SHIFT BACKSLASH
-                                                                        &kp LCMD           &lt 2 SPACE  &lt 3 ENTER    &lt 4 ENTER  &lt 2 SPACE  &kp LEFT_CONTROL
+&kp ESC          &kp Q                &kp W            &kp E            &kp R              &kp T        &none          &none          &kp Y        &kp U               &kp I             &kp O             &kp P                         &kp BACKSPACE
+&kp TAB          &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G        &none          &none          &kp H        &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMICOLON  &kp SQT
+&mt LSHFT GRAVE  &kp Z                &kp X            &kp C            &kp V              &kp B        &kp GRAVE      &kp BACKSLASH  &kp N        &kp M               &kp COMMA         &kp DOT           &kp FSLH                      &mt RIGHT_SHIFT BACKSLASH
+                                                                        &kp LCMD           &lt 2 SPACE  &lt 3 ENTER    &lt 4 ENTER    &lt 2 SPACE  &kp BACKSPACE
             >;
 
             label = "mac";
@@ -118,10 +113,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans          &kp N1       &kp N2        &kp N3           &kp NUMBER_4   &kp N5   &none     &none   &kp N6  &kp N7    &kp N8        &kp N9     &kp N0  &trans
-&trans          &kp N6       &kp N7        &kp N8           &kp N9         &kp N0   &none     &none   &trans  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&kp LEFT_SHIFT  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp DOT  &trans    &trans  &trans  &trans    &kp DOWN      &trans     &trans  &kp RIGHT_SHIFT
-                                                            &trans         &trans   &trans    &trans  &trans  &trans
+&trans  &kp N1       &kp N2        &kp N3           &kp NUMBER_4   &kp N5   &none     &none   &kp N6  &kp N7    &kp N8        &kp N9     &kp N0  &trans
+&trans  &kp N6       &kp N7        &kp N8           &kp N9         &kp N0   &none     &none   &trans  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp DOT  &trans    &trans  &trans  &trans    &kp DOWN      &trans     &trans  &trans
+                                                    &trans         &trans   &trans    &trans  &trans  &trans
             >;
 
             label = "number";
@@ -129,10 +124,10 @@
 
         symbol {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &none     &none   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS       &kp PLUS   &trans
-&trans  &trans           &kp LEFT     &kp UP    &kp RIGHT   &kp PAGE_UP    &none     &trans  &trans     &kp LEFT       &kp UP        &kp RIGHT       &trans     &trans
-&trans  &trans           &kp END      &kp DOWN  &kp HOME    &kp PAGE_DOWN  &trans    &trans  &trans     &trans         &kp DOWN      &kp UNDERSCORE  &kp EQUAL  &trans
-                                                &trans      &trans         &trans    &trans  &trans     &trans
+&trans  &mt LEFT_ALT EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &none     &none   &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp MINUS      &kp PLUS          &trans
+&trans  &mt LEFT_CONTROL TAB      &kp LEFT     &kp UP    &kp RIGHT   &kp PAGE_UP    &none     &trans  &trans     &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT   &kp LEFT_CONTROL  &trans
+&trans  &mt LEFT_SHIFT ESCAPE     &kp END      &kp DOWN  &kp HOME    &kp PAGE_DOWN  &trans    &trans  &kp EQUAL  &kp UNDERSCORE  &kp GRAVE     &kp BACKSLASH  &kp SQT           &trans
+                                                         &trans      &trans         &trans    &trans  &trans     &trans
             >;
 
             label = "symbol";
@@ -141,7 +136,7 @@
         func {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6   &none    &none  &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none    &none  &none           &kp LSHFT          &kp LCTRL        &kp LALT              &kp LGUI              &none
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &none    &none  &none           &kp LSHFT          &kp LEFT_GUI     &kp LALT              &kp LEFT_CONTROL      &none
 &none   &none   &none   &none    &none    &none    &none    &none  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &none                 &none                 &none
                                  &none    &none    &none    &none  &trans          &none
             >;
@@ -151,10 +146,10 @@
 
         switch {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none          &none           &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &none          &none           &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &bootloader    &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans
-                                                      &trans        &trans        &trans         &trans          &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none          &none           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &none          &none           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_CLR    &trans        &trans        &trans        &trans        &bootloader    &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans
+                                                  &trans        &trans        &trans         &trans          &trans  &trans
             >;
 
             label = "switch";
