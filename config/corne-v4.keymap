@@ -92,10 +92,6 @@
         };
     };
 
-    &lt {
-        quick-tap-ms = <200>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
