@@ -5,8 +5,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
-&lt { quick-tap-ms = <190>; };
+&lt {
+    quick-tap-ms = <175>;
+    flavor = "balanced";
+};
 
 / {
     combos {
@@ -137,10 +142,10 @@
 
         symbol {
             bindings = <
-&trans  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &none     &none   &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp DELETE  &kp BACKSPACE  &trans
-&trans  &kp HOME  &kp LEFT     &kp UP    &kp RIGHT   &kp PG_UP      &none     &trans  &kp BACKSLASH  &kp MINUS      &kp EQUAL     &kp GRAVE   &kp SQT        &trans
-&trans  &kp END   &trans       &kp DOWN  &trans      &kp PAGE_DOWN  &trans    &trans  &kp PIPE       &kp UNDER      &kp PLUS      &kp TILDE   &kp DQT        &trans
-                                         &trans      &trans         &trans    &trans  &trans         &trans
+&trans  &kp EXCL   &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &none     &none   &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp DELETE  &kp BACKSPACE  &trans
+&trans  &trans     &kp LEFT     &kp UP    &kp RIGHT   &kp PG_UP      &none     &trans  &kp BACKSLASH  &kp MINUS      &kp EQUAL     &kp GRAVE   &kp SQT        &trans
+&trans  &kp GRAVE  &kp END      &kp DOWN  &kp HOME    &kp PAGE_DOWN  &trans    &trans  &kp PIPE       &kp UNDER      &kp PLUS      &kp TILDE   &kp DQT        &trans
+                                          &trans      &trans         &trans    &trans  &trans         &trans
             >;
 
             label = "symbol";
@@ -159,10 +164,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans    &trans  &trans  &trans         &trans     &trans          &trans           &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans    &trans  &trans  &mkp LCLK      &mkp MCLK  &mkp RCLK       &mkp MB4         &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &kp PAGE_DOWN  &kp PG_UP  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans
-                                                &trans           &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans    &trans  &trans     &trans     &trans     &trans          &trans           &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans    &trans  &kp PG_UP  &mkp LCLK  &mkp MCLK  &mkp RCLK       &mkp MB4         &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &kp PG_DN  &kp HOME   &kp END    &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans
+                                                &trans           &trans  &trans    &trans  &trans     &trans
             >;
 
             label = "mouse";
