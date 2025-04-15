@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne-v4}
 layers:
-  mac:
+  QWRT_HRM:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -30,7 +30,7 @@ layers:
   - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '''', s: '"'}
   - {t: '`', h: '$$mdi:apple-keyboard-shift$$', s: '~'}
-  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
+  - Z
   - X
   - C
   - V
@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:keyboard-space$$', h: number}
-  - {t: '$$mdi:keyboard-return$$', h: symbol}
-  - {t: '$$mdi:keyboard-return$$', h: symbol}
-  - {t: '$$mdi:keyboard-space$$', h: number}
-  - {t: '$$mdi:backspace$$', h: func}
-  game:
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-return$$', h: SYM}
+  - {t: '$$mdi:keyboard-return$$', h: SYM}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:backspace$$', h: FUNC}
+  GAME:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -85,7 +85,7 @@ layers:
   - V
   - B
   - M
-  - {t: PRINTSCREEN, h: symbol}
+  - {t: PRINTSCREEN, h: SYM}
   - N
   - M
   - {t: ',', s: <}
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  number:
+  NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  symbol:
+  SYM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
@@ -196,7 +196,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  func:
+  FUNC:
   - F1
   - F2
   - F3
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  switch:
+  SYS:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -297,23 +297,31 @@ layers:
 combos:
 - p: [5, 4]
   k: (
+  l: [QWRT_HRM, NUM, SYM]
 - p: [8, 9]
   k: )
+  l: [QWRT_HRM, NUM, SYM]
 - p: [32, 33]
   k: {t: '[', s: '{'}
+  l: [QWRT_HRM, NUM, SYM]
 - p: [37, 36]
   k: {t: ']', s: '}'}
+  l: [QWRT_HRM, NUM, SYM]
 - p: [18, 19]
   k: '{'
+  l: [QWRT_HRM, NUM, SYM]
 - p: [22, 23]
   k: '}'
+  l: [QWRT_HRM, NUM, SYM]
 - p: [29, 30]
   k: $$mdi:backspace-reverse-outline$$
+  l: [QWRT_HRM, GAME, NUM, SYM]
 - p: [39, 40]
   k: $$mdi:backspace-reverse-outline$$
-- p: [1, 2]
-  k: $$mdi:keyboard-esc$$
+  l: [QWRT_HRM, GAME, NUM, SYM]
 - p: [44, 34, 19]
-  k: {t: game, h: toggle}
+  k: {t: GAME, h: toggle}
+  l: [QWRT_HRM]
 - p: [42, 43, 44]
-  k: {t: mac, h: toggle}
+  k: {t: QWRT_HRM, h: toggle}
+  l: [GAME]
