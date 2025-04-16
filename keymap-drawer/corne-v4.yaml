@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:backspace$$', h: FUNC}
   QWRT:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - Q
   - W
   - E
@@ -63,8 +63,8 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - A
   - S
   - D
@@ -77,22 +77,22 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - .
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-command$$
   - Z
   - X
   - C
   - V
   - B
-  - PRINTSCREEN
-  - $$mdi:apple-keyboard-option$$
+  - Sft+Gui+S
+  - $$mdi:alpha-w-box$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -279,14 +279,14 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&studio_unlock'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -297,22 +297,22 @@ layers:
 combos:
 - p: [5, 4]
   k: (
-  l: [QWRT_HRM, NUM, SYM]
+  l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [8, 9]
   k: )
-  l: [QWRT_HRM, NUM, SYM]
+  l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [32, 33]
   k: {t: '[', s: '{'}
-  l: [QWRT_HRM, NUM, SYM]
+  l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [37, 36]
   k: {t: ']', s: '}'}
-  l: [QWRT_HRM, NUM, SYM]
+  l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [18, 19]
   k: '{'
-  l: [QWRT_HRM, NUM, SYM]
+  l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [22, 23]
   k: '}'
-  l: [QWRT_HRM, NUM, SYM]
+  l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [29, 30]
   k: $$mdi:backspace-reverse-outline$$
   l: [QWRT_HRM, QWRT, NUM, SYM]
