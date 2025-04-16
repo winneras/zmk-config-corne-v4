@@ -36,20 +36,20 @@ layers:
   - V
   - B
   - {t: Sft+Gui+4, s: Sft+Gui+$}
-  - PRINTSCREEN
+  - $$mdi:alpha-w-box$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-return$$', h: SYM}
   - {t: '$$mdi:keyboard-return$$', h: SYM}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:backspace$$', h: FUNC}
-  GAME:
+  QWRT:
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -78,21 +78,21 @@ layers:
   - L
   - {t: ;, s: ':'}
   - .
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
   - V
   - B
-  - M
   - PRINTSCREEN
+  - $$mdi:apple-keyboard-option$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -315,13 +315,13 @@ combos:
   l: [QWRT_HRM, NUM, SYM]
 - p: [29, 30]
   k: $$mdi:backspace-reverse-outline$$
-  l: [QWRT_HRM, GAME, NUM, SYM]
+  l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [39, 40]
   k: $$mdi:backspace-reverse-outline$$
-  l: [QWRT_HRM, GAME, NUM, SYM]
+  l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [44, 34, 19]
-  k: {t: GAME, h: toggle}
+  k: {t: QWRT, h: toggle}
   l: [QWRT_HRM]
 - p: [42, 43, 44]
   k: {t: QWRT_HRM, h: toggle}
-  l: [GAME]
+  l: [QWRT]
