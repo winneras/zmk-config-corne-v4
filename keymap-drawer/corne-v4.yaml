@@ -136,7 +136,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PG DN
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-down-bold$$
   - {t: ., s: '>'}
   - END
@@ -295,16 +295,16 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [5, 4]
+- p: [32, 33]
   k: (
   l: [QWRT_HRM, QWRT, NUM, SYM]
-- p: [8, 9]
+- p: [36, 37]
   k: )
   l: [QWRT_HRM, QWRT, NUM, SYM]
-- p: [32, 33]
+- p: [4, 5]
   k: {t: '[', s: '{'}
   l: [QWRT_HRM, QWRT, NUM, SYM]
-- p: [37, 36]
+- p: [8, 9]
   k: {t: ']', s: '}'}
   l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [18, 19]
