@@ -23,25 +23,25 @@
 
         par_l {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <5 4>;
+            key-positions = <32 33>;
             layers = <0 1 2 3>;
         };
 
         par_r {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <8 9>;
+            key-positions = <36 37>;
             layers = <0 1 2 3>;
         };
 
         bkt_l {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <32 33>;
+            key-positions = <4 5>;
             layers = <0 1 2 3>;
         };
 
         bkt_r {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <37 36>;
+            key-positions = <8 9>;
             layers = <0 1 2 3>;
         };
 
@@ -145,9 +145,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1       &kp N2        &kp N3           &kp N4         &kp N5   &none     &none   &kp N6     &kp N7    &kp N8        &kp N9     &kp N0                  &trans
-&trans  &kp N6       &kp N7        &kp N8           &kp N9         &kp N0   &none     &none   &kp PG_UP  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &mt RIGHT_CONTROL HOME  &trans
-&trans  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp DOT  &trans    &trans  &kp PG_DN  &none     &kp DOWN      &kp DOT    &kp END                 &trans
+&trans  &kp N1       &kp N2        &kp N3           &kp N4         &kp N5   &none     &none   &kp N6     &kp N7         &kp N8        &kp N9     &kp N0                  &trans
+&trans  &kp N6       &kp N7        &kp N8           &kp N9         &kp N0   &none     &none   &kp PG_UP  &kp LEFT       &kp UP_ARROW  &kp RIGHT  &mt RIGHT_CONTROL HOME  &trans
+&trans  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp DOT  &trans    &trans  &kp PG_DN  &kp BACKSPACE  &kp DOWN      &kp DOT    &kp END                 &trans
                                                     &trans         &trans   &trans    &trans  &trans     &trans
             >;
 
