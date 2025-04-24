@@ -295,10 +295,10 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [32, 33]
+- p: [18, 19]
   k: (
   l: [QWRT_HRM, QWRT, NUM, SYM]
-- p: [36, 37]
+- p: [23, 22]
   k: )
   l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [4, 5]
@@ -307,10 +307,10 @@ combos:
 - p: [8, 9]
   k: {t: ']', s: '}'}
   l: [QWRT_HRM, QWRT, NUM, SYM]
-- p: [18, 19]
+- p: [32, 33]
   k: '{'
   l: [QWRT_HRM, QWRT, NUM, SYM]
-- p: [22, 23]
+- p: [36, 37]
   k: '}'
   l: [QWRT_HRM, QWRT, NUM, SYM]
 - p: [29, 30]
